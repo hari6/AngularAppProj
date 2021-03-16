@@ -2,6 +2,15 @@
         <div class="app-header" role="banner">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <span>{{ title }}</span>
+            <button style="height:16px; width:16px;" (click)="goBack()" class="backbutton"  >
+                <!-- <img [src]='assets/images/back.png' class="imgSize"/> -->
+            </button>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
             <div class="container" onclick="myFunction(this)">
               <div class="bar1"></div>
               <div class="bar2"></div>
