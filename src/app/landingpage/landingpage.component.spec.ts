@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { RTOAppComponent } from './rto-app.component';
+import { RTOAppComponent } from './landingpage.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

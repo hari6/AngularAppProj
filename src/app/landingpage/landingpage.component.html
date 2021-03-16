@@ -2,7 +2,7 @@
  
 
 <!-- Toolbar -->
-<div class="app-header" role="banner">
+<!-- <div class="app-header" role="banner">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <span>{{ title }}</span>
   <div class="container" onclick="myFunction(this)">
@@ -12,12 +12,12 @@
   </div>
 
   
-  <!-- <script>
+  <script>
   function myFunction(x) {
     x.classList.toggle("change");
   }
-  </script> -->
-</div>
+  </script>
+</div> -->
 <div class="content" role="main">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p> -->
 
-   <div class="card-container" routerLinkActive='active' [routerLink]="['/welcome']"></div>
+   <div class="card-container" routerLinkActive='active' [routerLink]="['/welcome']">
    <div class="row">
      <div class="col-md-2">
     <button class="card btn btn-primary" >
@@ -41,7 +41,7 @@
         <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/welcome']">Home</a></li>
         <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/seatmanagement']">Product List</a></li>
       </ul> -->
-      <div (click)="clickEvent()" class="title-style">
+      <div (click)="clickEvent(objects[0])" class="title-style">
         <div class="imageClass">
             <p class="title-obj" >{{objects[0].titlename}}</p>
         <img [src]="objects[0].imageUrl" class="imgSize"/>
@@ -51,14 +51,16 @@
      </div>
    </div>
 
-    <div class="card-container" routerLinkActive='active' [routerLink]="['/seatmanagement']"></div>
+    <div class="card-container" routerLinkActive='active' [routerLink]="['/seatmanagement']">
     <button class="card btn btn-primary">
-      <div (click)="navigateTo(objects[1])" class="title-style">
+      <div (click)="clickEvent(objects[1])" class="title-style">
+        <div class="imageClass">
+      <!-- <div (click)="navigateTo(objects[1])" class="title-style"> -->
         <p class="title-obj">{{objects[1].titlename}}</p>
-        <img class="imageClass" [src]="objects[1].imageUrl"/>
+        <img [src]="objects[1].imageUrl" class="imgSize"/>
         
         <!-- <img [src]="objects[1].imageUrl" class="imgSize"/> -->
-      
+      </div>
       </div>
     </button>
 
