@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
 
 })
 
-export class SeatLocationComponent {
+export class SeatManagementComponent {
     pageTitle = 'Seat Management';
 }

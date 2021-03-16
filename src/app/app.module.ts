@@ -2,23 +2,25 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { RTOAppComponent } from './core/rto-app.component';
-import { WelcomeComponent } from './home/welcome.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 import { NavBarComponent } from './navbar/navbar.component';
-import { SeatLocationComponent } from './seatmanagement/seatmanagement.component';
+import { SeatManagementComponent } from './seatmanagement/seatmanagement.component';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/welcome.component';
 
 
 @NgModule({
   declarations: [
-    RTOAppComponent,
-    WelcomeComponent,
-    SeatLocationComponent
+    AppComponent,
+    LandingpageComponent,
+    HomeComponent,
+    SeatManagementComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [RTOAppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
