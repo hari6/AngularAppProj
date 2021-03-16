@@ -1,9 +1,26 @@
 
+ 
+
 <!-- Toolbar -->
 <div class="app-header" role="banner">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <span>{{ title }}</span>
+  <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  
+  <!-- <script>
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+  </script> -->
 </div>
 <div class="content" role="main">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Highlight Card -->
   <!-- <div class="card highlight-card card-small">
@@ -16,16 +33,70 @@
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p> -->
 
-  <div class="card-container">
-    <a class="card" target="_blank" rel="noopener" href="">
-      <span>Home</span>
-      </a>
+   <div class="card-container" routerLinkActive='active' [routerLink]="['/welcome']"></div>
+   <div class="row">
+     <div class="col-md-2">
+    <button class="card btn btn-primary" >
+      <!-- <ul class='nav nav-pills'>
+        <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/welcome']">Home</a></li>
+        <li><a class='nav-link' routerLinkActive='active' [routerLink]="['/seatmanagement']">Product List</a></li>
+      </ul> -->
+      <div (click)="clickEvent()" class="title-style">
+        <div class="imageClass">
+            <p class="title-obj" >{{objects[0].titlename}}</p>
+        <img [src]="objects[0].imageUrl" class="imgSize"/>
+      </div>
+      </div>
+    </button>
+     </div>
+   </div>
 
-    <a class="card" target="_blank" rel="noopener" href="">
+    <div class="card-container" routerLinkActive='active' [routerLink]="['/seatmanagement']"></div>
+    <button class="card btn btn-primary">
+      <div (click)="navigateTo(objects[1])" class="title-style">
+        <p class="title-obj">{{objects[1].titlename}}</p>
+        <img class="imageClass" [src]="objects[1].imageUrl"/>
+        
+        <!-- <img [src]="objects[1].imageUrl" class="imgSize"/> -->
+      
+      </div>
+    </button>
+
+    <!-- <div class="card-container"  ></div>
+    <button class="card btn btn-primary" (click)="onClick()">
+      <span>Seat Management</span>
+      
+    </button> -->
+
+    <!-- <div class="card-container"  ></div>
+    <button class="card btn btn-primary" (click)="onClick()">
+      <span>Place Holder #1</span>
+      
+    </button>
+
+    <div class="card-container"  ></div>
+    <button class="card btn btn-primary" (click)="onClick()">
+      <span>Place Holder #2</span>
+      
+    </button> -->
+
+    <!-- <a class="card" target="_blank" rel="noopener" href="">
       <span>Seat Management</span>
     </a>
 
+    <a class="card" target="_blank" rel="noopener" href="">
+      <span>Place Holder #1</span>
+    </a>
+
+    <a class="card" target="_blank" rel="noopener" href="">
+      <span>Place Holder #2</span>
+    </a> -->
+
+    <!-- <button class= "btn btn-primary" (click)="onClick()">Click me!</button> -->
+
   </div>
+
+  
 
   <!-- Next Steps -->
   <!-- <h2>Next Steps</h2>
@@ -83,4 +154,4 @@
 
   
 
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
