@@ -1,6 +1,6 @@
 # Myangularapp
 
-This is a sample project Angular App created to understand creation of components, ui elements, css, html and ts for pp components as well as other additional components as required.
+This is a sample project Angular App created to understand creation of components, ui elements, css, html and ts for App components as well as other additional components as required.
 
 ## Development server
 
