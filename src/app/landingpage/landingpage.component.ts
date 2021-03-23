@@ -12,7 +12,9 @@ export class LandingpageComponent{
 
   objects = [
     {titlename: "Home", routePath:'/welcome', imageUrl: 'assets/images/home.png'},
-    {titlename: "Seat Management", routePath: '/seatmanagement', imageUrl: 'assets/images/seats.png'}
+    {titlename: "Seat Management", routePath: '/seatmanagement', imageUrl: 'assets/images/seats.png'},
+    {titlename: "Placeholder 1", routePath:'/placeholder1', imageUrl: ''},
+    {titlename: "Placeholder 2", routePath: '/placeholder2', imageUrl: ''}
 
   ];
  
@@ -33,10 +35,10 @@ constructor(private route: Router) {  }
   // }
 
   clickEvent(value) {
-    if (value && (value.titlename === 'Home' || value.titlename === 'Seat Manamgement')){
+    if (value && (value.titlename === 'Home' || value.titlename === 'Seat Management')){
       this.route.navigate([value.routePath]);
     }   else {
-      this.route.navigate(['home']);
+      this.route.navigate(['welcome']);
   } 
   }
   myFunction(x) {
