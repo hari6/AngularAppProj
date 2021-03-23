@@ -15,11 +15,31 @@
     font-weight: 600;
   }
 
+  .back-btn {
+    height: 30px;
+    width: 25px;
+    color: red;
+    background-attachment: relative;
+    background-color: red;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    
+  }
+  .menu-btn {
+    display: inline-block;
+    height: 30px;
+    width: 20%;
+    font-size: 20px;
+    position: absolute;
+    text-align: right;
+    }
+
   .container {
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    padding-left: 90%;
+    padding-left: 10%;
     padding-top: 0%;
     top: 0;
     left: 0;
@@ -30,3 +50,25 @@
     align-items: baseline
     
   }
+
+  .backbutton {
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+
+  }
+
+  /* .mat-menu {
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    height: 30px;
+    width: 25px;
+    color: red;
+    background-attachment: relative;
+    background-color: red;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+
+  } */

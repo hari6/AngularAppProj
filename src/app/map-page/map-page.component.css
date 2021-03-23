@@ -1,0 +1,24 @@
+.card-header {
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    /* padding-top: 5%; */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background-color: red;
+    color: yellow;
+    font-weight: 600; */
+  }
+  .card {
+    padding-top: 4%;
+    align-content: center;  
+    text-align: center;
+  }

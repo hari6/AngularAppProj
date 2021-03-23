@@ -10,15 +10,15 @@
             </div>
 
         </app-header> -->
-        <head>
+<!-- <head>
         <style>
         h1 {
           text-align: center;
         }
         </style>
-        </head>
-        <body>
-            <!-- <div class='card'>
+        </head> -->
+
+<!-- <div class='card'>
 
     
           
@@ -26,10 +26,10 @@
                   {{pageTitle}}
                  
                 </div> -->
-        <h1>{{pageTitle}}</h1>
-        
-        </body>
-    
+<!-- <h1>{{pageTitle}}</h1> -->
+
+
+
 <!-- 
     <div class='card-body'>
         <div class='row'>
@@ -40,7 +40,7 @@
             </div> -->
 
 
-    <!-- <select name="Select Country" id="#">
+<!-- <select name="Select Country" id="#">
         <option selected="selected" value="one">Select Country</option>
         <option value="two">India</option>
         <option value="three">Philippines</option>
@@ -99,12 +99,12 @@
             <li class="list-group-item">Philippines</li>
           </ul> -->
 
-          <div class="btn-group" role="group" aria-label="Basic example" >
+<!-- <div class="btn-group" role="group" aria-label="Basic example" >
             <button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>India</button>
             <button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Philippines</button>
-          </div>
+          </div> -->
 
-        <div class="dropdown" mdbDropdown>
+<!-- <div class="dropdown" mdbDropdown>
 
             <button mdbDropdownToggle mdbBtn color="primary" class="dropdown-toggle waves-light" type="button"
               mdbWavesEffect>
@@ -116,9 +116,99 @@
               <a class="dropdown-item" href="#">Bengaluru</a>
               <a class="dropdown-item" href="#">Chennai</a>
             </div>
-          </div>
+          </div> -->
 
-          <div class="dropdown" mdbDropdown>
+
+<!-- <meta name="viewport" content="width=device-width", initial-scale="1"/> -->
+<div class='card'>
+<mat-card>
+  <div class='card-header'>
+    {{pageTitle}} 
+  </div>
+</mat-card>
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+  <mat-button-toggle value="India">India</mat-button-toggle>
+  <mat-button-toggle value="Philippines">Philippines</mat-button-toggle>
+  <!-- <mat-button-toggle value="underline">Underline</mat-button-toggle> -->
+</mat-button-toggle-group>
+<div class='card-display'>
+
+  <!-- <div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <label>Users:   </label>
+            <select class="form-control">
+                <option value="">Select User</option>    
+                <!-- <option *ngFor="let u of UsersList" [ngValue]="u.UserId">{{u.FullName}}</option> -->
+           <!-- </select>
+        </div>
+    </div>
+</div> -->
+
+<div class= "location-card" >
+  <label class="label-name" >Select Location:  </label> 
+  <!-- <h4>Select Location:</h4>  -->
+  <mat-form-field class="fieldname" appearance="fill">
+    <mat-label>Choose Location</mat-label>
+    <mat-select [disabled]="disableSelect.value">
+      <mat-option value="option1">Hyderabad</mat-option>
+      <mat-option value="option2" disabled>Chennai (disabled)</mat-option>
+      <mat-option value="option3">Bengaluru</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+</div> 
+
+<div class= "building-card" >
+  <label class="label-name" >Select Building/Tower:  </label>
+  <!-- <h4>Select Building/Tower:</h4> -->
+  <mat-form-field class="fieldname" appearance="fill">
+    <mat-label>Choose Building</mat-label>
+    <mat-select [disabled]="disableSelect.value">
+      <mat-option value="option1">Tower 1</mat-option>
+      <mat-option value="option2">Tower 2</mat-option>
+      <mat-option value="option3">Tower 3</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class= "Floor-card" >
+  <label class="label-name" >Select Floor:  </label>
+  <!-- <h4>Select Floor:</h4> -->
+  <mat-form-field class="fieldname" appearance="fill">
+    <mat-label>Choose Floor</mat-label>
+    <mat-select [disabled]="disableSelect.value">
+      <mat-option value="option1">Floor 1</mat-option>
+      <mat-option value="option2">Floor 2</mat-option>
+      <mat-option value="option3">Floor 3</mat-option>
+      <mat-option value="option4">Floor 4</mat-option>
+      <mat-option value="option5">Floor 5</mat-option>
+      <mat-option value="option6">Floor 6</mat-option>
+      <mat-option value="option7">Floor 7</mat-option>
+      <mat-option value="option8">Floor 8</mat-option>
+      <mat-option value="option9">Floor 9</mat-option>
+      <mat-option value="option10">Floor 10</mat-option>
+      <mat-option value="option11">Floor 11</mat-option>
+      <mat-option value="option12">Floor 12</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <section>
+    <div class="btn-label"></div>
+    <div class="button-row">
+      <!-- <button mat-flat-button>Basic</button> -->
+      <button mat-flat-button color="primary" (click)="clickEvent()" routerLinkActive='active'
+        [routerLink]="['/floormappage']">Go
+      </button>
+      <!-- <button mat-flat-button color="accent">Accent</button>
+              <button mat-flat-button color="warn">Warn</button>
+              <button mat-flat-button disabled>Disabled</button>
+              <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a> -->
+    </div>
+  </section>
+</div>
+</div>
+
+<!-- <div class="dropdown" mdbDropdown>
 
             <button mdbDropdownToggle mdbBtn color="primary" class="dropdown-toggle waves-light" type="button"
               mdbWavesEffect>
@@ -144,5 +234,4 @@
               <a class="dropdown-item" href="#">Bengaluru</a>
               <a class="dropdown-item" href="#">Chennai</a>
             </div>
-          </div>
-
+          </div> -->
