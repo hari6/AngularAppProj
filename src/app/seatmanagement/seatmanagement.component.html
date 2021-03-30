@@ -33,72 +33,70 @@
     </mat-button-toggle>
   </mat-button-toggle-group> -->
   <!-- <span>Current Value: {{toggle}}</span> -->
-  <div *ngIf="toggle">
-  
-
-  <div class='card-display'>
-    <div class="location-card">
-      <label class="label-name">Select Location: </label>
-      <!-- <h4>Select Location:</h4>  -->
-      <mat-form-field class="fieldname" appearance="fill">
-        <mat-label>Choose Location</mat-label>
-        <mat-select name="location-card">
-          <mat-option *ngFor="let location of allLocations" [value]="location.locationId">{{ location.locationId }}
-          </mat-option>
-          <!-- <mat-option value="option2" disabled>Chennai (disabled)</mat-option>
+  <div *ngIf="toggle" class="card1">
+    <div class='card-display'>
+      <div class="location-card">
+        <label class="label-name">Select Location: </label>
+        <!-- <h4>Select Location:</h4>  -->
+        <mat-form-field class="fieldname" appearance="fill">
+          <mat-label>Choose Location</mat-label>
+          <mat-select name="location-card">
+            <mat-option *ngFor="let location of allLocations" [value]="location.locationId">{{ location.locationId }}
+            </mat-option>
+            <!-- <mat-option value="option2" disabled>Chennai (disabled)</mat-option>
            <mat-option value="option3">Bengaluru</mat-option> -->
-        </mat-select>
-      </mat-form-field>
-    </div>
+          </mat-select>
+        </mat-form-field>
+      </div>
 
-    <div class="building-card">
-      <label class="label-name">Select Building/Tower: </label>
-      <!-- <h4>Select Building/Tower:</h4> -->
-      <mat-form-field class="fieldname" appearance="fill">
-        <mat-label>Choose Building</mat-label>
-        <mat-select name="building-card">
-          <mat-option *ngFor="let building of allBuildings" [value]="building.buildingId">{{ building.buildingId }}
-          </mat-option>
-          <!-- <mat-option value="option2">Tower 2</mat-option>
+      <div class="building-card">
+        <label class="label-name">Select Building/Tower: </label>
+        <!-- <h4>Select Building/Tower:</h4> -->
+        <mat-form-field class="fieldname" appearance="fill">
+          <mat-label>Choose Building</mat-label>
+          <mat-select name="building-card">
+            <mat-option *ngFor="let building of allBuildings" [value]="building.buildingId">{{ building.buildingId }}
+            </mat-option>
+            <!-- <mat-option value="option2">Tower 2</mat-option>
           <mat-option value="option3">Tower 3</mat-option> -->
-        </mat-select>
-      </mat-form-field>
-    </div>
+          </mat-select>
+        </mat-form-field>
+      </div>
 
-    <div class="Floor-card">
-      <label class="label-name">Select Floor: </label>
-      <!-- <h4>Select Floor:</h4> -->
-      <mat-form-field class="fieldname" appearance="fill">
-        <mat-label>Choose Floor</mat-label>
-        <mat-select name="floor-card">
-          <!-- <mat-option [ngValue]="null" >Choose FLoor</mat-option> -->
-          <mat-option *ngFor="let floor of allFloors" [value]="floor.floorId">{{ floor.floorId }}</mat-option>
-          <!-- <mat-option value="option2">Floor 2</mat-option>
+      <div class="Floor-card">
+        <label class="label-name">Select Floor: </label>
+        <!-- <h4>Select Floor:</h4> -->
+        <mat-form-field class="fieldname" appearance="fill">
+          <mat-label>Choose Floor</mat-label>
+          <mat-select name="floor-card">
+            <!-- <mat-option [ngValue]="null" >Choose FLoor</mat-option> -->
+            <mat-option *ngFor="let floor of allFloors" [value]="floor.floorId">{{ floor.floorId }}</mat-option>
+            <!-- <mat-option value="option2">Floor 2</mat-option>
           <mat-option value="option3">Floor 3</mat-option>
           <mat-option value="option4">Floor 4</mat-option>
           <mat-option value="option5">Floor 5</mat-option> -->
-        </mat-select>
-      </mat-form-field>
-    </div>
+          </mat-select>
+        </mat-form-field>
+      </div>
 
-    <section>
-      <div class="btn-label"></div>
-      <div class="button-row">
-        <!-- <button mat-flat-button>Basic</button> -->
-        <button mat-flat-button color="primary" (click)="clickEvent()" routerLinkActive='active'
-          [routerLink]="['/floormappage']">Go
-        </button>
-        <!-- <button mat-flat-button color="accent">Accent</button>
+      <section>
+        <div class="btn-label"></div>
+        <div class="button-row">
+          <!-- <button mat-flat-button>Basic</button> -->
+          <button mat-flat-button color="primary" (click)="clickEvent()" routerLinkActive='active'
+            [routerLink]="['/floormappage']">Go
+          </button>
+          <!-- <button mat-flat-button color="accent">Accent</button>
               <button mat-flat-button color="warn">Warn</button>
               <button mat-flat-button disabled>Disabled</button>
               <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a> -->
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
-</div>
 
-<div *ngIf="!toggle">No Data Available</div>
+<div *ngIf="!toggle" class="card2">No Data Available</div>
 
 
 
