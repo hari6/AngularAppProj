@@ -18,11 +18,24 @@
       {{ pageTitle }}
     </div>
   </mat-card>
-  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle value="India">India</mat-button-toggle>
-    <mat-button-toggle value="Philippines">Philippines</mat-button-toggle>
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style" [value]="toggle" (change)="toggleView($event)">
+    <mat-button-toggle [value]="true">India</mat-button-toggle>
+    <mat-button-toggle [value]="false">Philippines</mat-button-toggle>
     <!-- <mat-button-toggle value="underline">Underline</mat-button-toggle> -->
   </mat-button-toggle-group>
+
+  <!-- <mat-button-toggle-group [value]="toggle" (change)="toggleView($event)">
+    <mat-button-toggle [value]="true">
+        Grid
+    </mat-button-toggle>
+    <mat-button-toggle [value]="false">
+        List
+    </mat-button-toggle>
+  </mat-button-toggle-group> -->
+  <!-- <span>Current Value: {{toggle}}</span> -->
+  <div *ngIf="toggle">
+  
+
   <div class='card-display'>
     <div class="location-card">
       <label class="label-name">Select Location: </label>
@@ -83,6 +96,9 @@
     </section>
   </div>
 </div>
+</div>
+
+<div *ngIf="!toggle">No Data Available</div>
 
 
 

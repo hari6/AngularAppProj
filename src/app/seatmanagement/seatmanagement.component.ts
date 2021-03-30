@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { Router } from '@angular/router';
 import { LocationDetailsService } from '../location-details.service';
-import { Location, Building, Floor } from './location'
+import { Location, Building, Floor, Country } from './location'
 
 
 //   export interface Floor {
@@ -29,12 +30,18 @@ import { Location, Building, Floor } from './location'
 export class SeatManagementComponent {
     pageTitle = 'Seat Management';
     disableSelect = new FormControl(false);
+    toggle: boolean = true;
     // brands: Brand[] = [
     //     { value: 'Louis Vuitton', viewValue: 'Louis Vuitton' },
     //     { value: 'Gucci', viewValue: 'Gucci' },
     //     { value: 'Prada', viewValue: 'Prada' },
     //     { value: 'Chanel', viewValue: 'Chanel' },
     //   ];
+    allCountries: Country[] =
+    [
+        {countryId: 'India'},
+        {countryId: 'Philippines'}
+    ];
     allFloors: Floor[] =
     [
     { floorId: 'Floor 1'},
@@ -73,6 +80,10 @@ export class SeatManagementComponent {
 
         // this.locationService = locationService;
 
+     }
+
+     toggleView(change: MatButtonToggleChange){
+        this.toggle = change.value;
      }
 
     ngOnInit() {
