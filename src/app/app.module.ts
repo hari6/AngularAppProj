@@ -16,6 +16,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MapPageComponent } from './map-page/map-page.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { LocationDetailsService } from './location-details.service';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { MatMenuModule } from '@angular/material/menu';
     LandingpageComponent,
     HomeComponent,
     SeatManagementComponent,
-    MapPageComponent
+    MapPageComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatGridListModule,
     MatMenuModule
   ],
-  providers: [],
+  providers: [LocationDetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
