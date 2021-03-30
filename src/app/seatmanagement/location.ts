@@ -16,3 +16,7 @@ export interface Building {
 export interface Location {
     locationId: string;
   }
+
+export interface Country {
+    countryId: string;
+}
