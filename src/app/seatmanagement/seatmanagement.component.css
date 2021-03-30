@@ -23,6 +23,12 @@ thead {
     text-align: center;
   }
 
+  .card2 {
+    padding-top: 4%;
+    align-content: center;  
+    text-align: center;
+  }
+
   /* .location-card {
     display: inline-block;
     text-align: justify;
