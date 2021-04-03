@@ -12,7 +12,7 @@ export class AppComponent {
 
     constructor(private location: Location) {  }
 
-    goBack(){
-        this.location.back();
-    }
+    // goBack(){
+    //     this.location.back();
+    // }
 }

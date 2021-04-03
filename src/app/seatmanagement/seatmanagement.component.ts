@@ -3,7 +3,8 @@ import { FormControl } from '@angular/forms';
 import { MatButtonToggleChange } from '@angular/material/button-toggle';
 import { Router } from '@angular/router';
 import { LocationDetailsService } from '../location-details.service';
-import { Location, Building, Floor, Country } from './location'
+import { LocationPlace, Building, Floor, Country } from './location'
+import { Location } from "@angular/common"
 
 
 //   export interface Floor {
@@ -66,7 +67,7 @@ export class SeatManagementComponent {
         {buildingId: 'Tower 2'},
         {buildingId: 'Tower 3'}
     ];
-    allLocations: Location[] =
+    allLocations: LocationPlace[] =
     [
         {locationId: 'Hyderabad'},
         {locationId: 'Bengaluru'},
@@ -76,7 +77,9 @@ export class SeatManagementComponent {
 
     // private _locationService;
 
-    constructor(private route: Router, _locationService: LocationDetailsService) { 
+    constructor(private route: Router, 
+        private _locationService: LocationDetailsService,
+        private location: Location) { 
 
         // this.locationService = locationService;
 
@@ -93,6 +96,10 @@ export class SeatManagementComponent {
   
     clickEvent() {
         this.route.navigate(['floormappage']);
+    }
+
+    goBack(){
+        this.location.back();
     }
 
 

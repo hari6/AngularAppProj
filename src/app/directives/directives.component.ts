@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from "@angular/common"
 
 @Component({
   selector: 'app-directives',
@@ -19,10 +20,14 @@ export class DirectivesComponent implements OnInit {
         {title:'X-Men: Apocalypse',director:'Bryan Singer',cast:'Jennifer Lawrence, Olivia Munn, Oscar Isaac',releaseDate:'May 27, 2016'},  
     ]
 
-  constructor() { }
+  constructor(private location: Location) { }
 
   ngOnInit(): void {
   }
+
+  goBack(){
+    this.location.back();
+}
 
 }
 

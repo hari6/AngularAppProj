@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Location } from "@angular/common"
 
 @Component({
   templateUrl: './welcome.component.html',
@@ -8,10 +9,15 @@ import { Router } from '@angular/router';
 export class HomeComponent {
   public pageTitle = 'Welcome';
 
-  constructor(private route: Router) {  }
+  constructor(private route: Router,
+    private location: Location) {  }
 
     ngOnInit(){
   
     }
+
+    goBack(){
+      this.location.back();
+  }
   
 }

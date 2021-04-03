@@ -13,7 +13,7 @@ export interface Building {
     buildingId: string;
   }
 
-export interface Location {
+export interface LocationPlace {
     locationId: string;
   }
 
