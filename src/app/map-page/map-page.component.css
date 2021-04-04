@@ -17,6 +17,21 @@
     color: yellow;
     font-weight: 600; */
   }
+
+  .back-btn {
+    height: 35px;
+    width: 35px;
+    color: red;
+    background-attachment: relative;
+    background-color: red;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    padding-top: 1%;
+    padding-left: 1%;
+    
+  }
+
   .card {
     padding-top: 4%;
     align-content: center;  

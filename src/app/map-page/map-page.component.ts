@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Location } from "@angular/common"
 
 @Component({
   selector: 'app-map-page',
@@ -8,12 +9,15 @@ import { Router } from '@angular/router';
 })
 export class MapPageComponent implements OnInit {
   public pageTitle = 'Floor Map Page';
-  constructor(private route: Router) {  }
+  constructor(private route: Router,
+    private location: Location) {  }
 
     ngOnInit(){
   
     }
-
+    goBack(){
+      this.location.back();
+  }
   
 
 }
