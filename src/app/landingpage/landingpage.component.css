@@ -21,10 +21,9 @@
     margin: 0;
   }
 
-  .card-main{
-    padding-top: 10%;
-    color: white;
-  }
+  /* .card-main{
+    
+  } */
 
   .mat-grid-list{
     columns: 2;
@@ -101,15 +100,16 @@
     fill: #888;
   }
 
-  .card-container {
+  /* .card-container {
     align-content: center;
     text-align: center;
-  }
+  } */
 
   .card-main {
     padding-top: 4%;
     align-content: center;  
     text-align: center;
+    color: white;
   }
 
   .card {
@@ -181,6 +181,11 @@
     position: relative;
     left: 80px;
     
+  }
+
+  .btn.title-obj {
+    align-content: center;
+    text-align: center;
   }
 
   .title-obj {

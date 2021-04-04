@@ -43,16 +43,16 @@
 <!-- <mat-card> <div class='card-main'> -->
   <!-- <div class='card-main'> -->
   <mat-grid-list class= 'card-main' cols="2" rowHeight="4:1" >  
-    <div class="card-container" >
-    <mat-grid-tile>
-      <button class="card btn btn-primary" (click)="clickEvent(objects[0])" routerLinkActive='active' [routerLink]="['/welcome']" >
+    <!-- <div class="card-container" > -->
+    <mat-grid-tile class="card-container">
+      <button class="card btn btn-primary" style="text-align: center;" (click)="clickEvent(objects[0])" routerLinkActive='active' [routerLink]="['/welcome']" >
         <p class="title-obj" >{{objects[0].titlename}}
           <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
         </p>
       </button>
     </mat-grid-tile>
-  </div>
-    <div class="card-container" >
+  <!-- </div> -->
+    <div class="card-container" style="text-align: center; margin: auto; display: flex;" >
     <mat-grid-tile>
       <button class="card btn btn-primary" routerLinkActive='active' (click)="clickEvent(objects[1])" [routerLink]="['/seatmanagement']" >
         <p class="title-obj" >{{objects[1].titlename}}
