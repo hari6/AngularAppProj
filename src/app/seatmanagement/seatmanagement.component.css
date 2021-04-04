@@ -94,3 +94,15 @@ thead {
     size: 40%;
     color: red;
   }
+
+  .Gobtn {
+    height: 30px;
+    width: 60px;
+    background-color: rosybrown;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+
+  .button-row {
+    padding-top: 2%;
+  }
