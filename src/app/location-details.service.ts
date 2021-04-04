@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Location } from './seatmanagement/location'
+import { LocationPlace } from './seatmanagement/location'
 
 
 @Injectable({

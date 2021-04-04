@@ -8,6 +8,27 @@ thead {
     
   }
 
+  /* .backbutton {
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+
+  } */
+
+  .back-btn {
+    height: 35px;
+    width: 35px;
+    color: red;
+    background-attachment: relative;
+    background-color: red;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    padding-top: 1%;
+    padding-left: 1%;
+    
+  }
+
   .label-name {
    font-size: 18px;
    font-weight: normal;
